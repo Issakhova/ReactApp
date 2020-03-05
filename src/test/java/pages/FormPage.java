@@ -2,9 +2,12 @@ package pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+import utilities.Driver;
+import utilities.TestBase;
 
-public class FormPage extends BasePage{
+public class FormPage extends TestBase {
     @FindBy(name = "address1")
     public WebElement address1;
     @FindBy(name = "address2")
@@ -27,13 +30,26 @@ public class FormPage extends BasePage{
     public WebElement year;
     @FindBy(tagName = "button")
     public WebElement submitButton;
+    @FindBy(xpath = "//*[name()='svg']")
+    public WebElement logo;
 
 
-    public void selectState(String stateName){
+    public FormPage() {
+        PageFactory.initElements(Driver.getDriver(), this);
+    }
+
+
+    public void selectState(String stateName) {
 
         Select select = new Select(state);
         select.selectByVisibleText(stateName);
 
     }
+
+    public boolean logo_isDisplayed() {
+          return logo.isDisplayed();
+
+    }
+
 
 }

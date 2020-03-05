@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-03-05T07:48:41Z" name="Suite1" finished-at="2020-03-05T07:49:01Z" duration-ms="20641">
+    <groups>
+    </groups>
+    <test started-at="2020-03-05T07:48:41Z" name="Nopackage" finished-at="2020-03-05T07:49:01Z" duration-ms="20641">
+      <class name="tests.TestCases">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.TestCases@7e0b85f9]" started-at="2020-03-05T07:48:41Z" name="setUp" finished-at="2020-03-05T07:48:46Z" duration-ms="5877" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="userInfoForm()[pri:0, instance:tests.TestCases@7e0b85f9]" started-at="2020-03-05T07:48:47Z" name="userInfoForm" finished-at="2020-03-05T07:49:01Z" duration-ms="14708" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userInfoForm -->
+      </class> <!-- tests.TestCases -->
+    </test> <!-- Nopackage -->
+  </suite> <!-- Suite1 -->
+</testng-results>
